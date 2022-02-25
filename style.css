@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.prow{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+.products{
+    width: 24%;
+    height: auto;
+    margin-bottom: 40px;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.4);
+    border-radius: 5px;
+}
+.products img{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    cursor: pointer;
+    padding-top: 10px;
+}
+.detailes{
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.detailes h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.detailes p{
+    margin-top: 5px;
+}
+.detailes .des{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+.modal-product,
+.modal-dev,
+.modal-student,
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.4);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none; 
+    transition: 0.5s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.modal.active{
+    opacity: 1;
+    pointer-events: auto; 
+}
+
+.modal .modal-content{
+    width: 900px;
+    height: 70vh;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.modal-body{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.modal-body .image{
+    width: 39%;
+    text-align: cenetr;
+    box-shadow: 0 1rem 3rem rgba(0,0,0, 0.2);
+}
+.modal-body .modal-des{
+    width: 58%;
+    padding-left: 20px;
+    box-shadow: 0 1rem 3rem rgba(0,0,0, 0.2);
+}
+
+.image img{
+    height: 400px;
+    width: 100%;
+}
+.modal-des p{
+    margin: 5px 0;
+}
+.modal-des button{
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
